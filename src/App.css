@@ -341,9 +341,10 @@ body {
 #contact {
   background: linear-gradient(
     180deg,
-    rgba(22, 33, 62, 0.3) 0%,
-    rgba(20, 20, 30, 0.95) 50%,
-    rgba(10, 10, 20, 0.98) 100%
+    #16213e 0%,
+    #1a1a2e 30%,
+    #0f1419 70%,
+    #0a0a0a 100%
   );
   backdrop-filter: blur(10px);
   width: 100%;
@@ -361,8 +362,8 @@ body {
   height: 100px;
   background: linear-gradient(
     180deg,
-    transparent 0%,
-    rgba(22, 33, 62, 0.2) 100%
+    rgba(22, 33, 62, 0.8) 0%,
+    transparent 100%
   );
   pointer-events: none;
 }
