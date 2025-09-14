@@ -47,8 +47,8 @@ const Experience = () => {
           <div key={index} className="experience-item">
             <div className="experience-header">
               <div>
-                <h3 className="experience-title">{exp.title}</h3>
-                <div className="experience-company">{exp.company}</div>
+                <h3 className="experience-company">{exp.company}</h3>
+                <div className="experience-title">{exp.title}</div>
                 <div className="experience-location">{exp.location}</div>
               </div>
               <div className="experience-date">{exp.date}</div>
