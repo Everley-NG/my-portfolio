@@ -12,8 +12,8 @@ body {
 }
 
 .App {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+    "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
 }
@@ -123,4 +123,135 @@ body {
 .email-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px rgba(74, 158, 255, 0.3);
+}
+
+/* Section Css */
+.section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #ffffff;
+  position: relative;
+  font-weight: 600;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a9eff, #1a1a2e);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Skills Css */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skill-category h3 {
+  color: #4a9eff;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  padding: 0.5rem 0;
+  color: #e0e0e0;
+  border-bottom: 1px solid rgba(74, 158, 255, 0.1);
+}
+
+.skill-list li:last-child {
+  border-bottom: none;
+}
+
+/* Experience Css */
+.experience-item {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #4a9eff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item:hover {
+  transform: translateX(10px);
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.experience-title {
+  color: #4a9eff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.experience-company {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-date {
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+.experience-description {
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+.experience-description ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.experience-description li {
+  margin-bottom: 0.5rem;
 }
